@@ -1,0 +1,18 @@
+ ### 🛠️ How to Run Anytime
+
+  You can launch all services concurrently from the root directory with a single command:
+
+    npm run dev
+    # or
+    npm start
+
+  Or run individual services as needed:
+
+    npm run frontend     # Vite frontend (Port 5173)
+    npm run gateway      # API Gateway (Port 5000)
+    npm run auth         # Auth Service (Port 3001)
+    npm run flights      # Flight Search (Port 3000)
+    npm run bookings     # Booking Service (Port 4000)
+    npm run reminders    # Reminder Service (Port 3004)
+
+  Open http://localhost:5173 in your browser to start exploring the application.

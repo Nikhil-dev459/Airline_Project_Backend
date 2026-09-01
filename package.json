@@ -1,0 +1,29 @@
+{
+  "name": "aeroluxe-airline-system",
+  "version": "1.0.0",
+  "description": "AeroLuxe - Next-Gen Airline & Flight Reservation Microservices Platform",
+  "scripts": {
+    "dev": "concurrently -n \"GATEWAY,AUTH,FLIGHTS,BOOKINGS,REMINDERS,FRONTEND\" -c \"magenta,blue,green,yellow,cyan,bold.white\" \"npm run gateway\" \"npm run auth\" \"npm run flights\" \"npm run bookings\" \"npm run reminders\" \"npm run frontend\"",
+    "start": "npm run dev",
+    "frontend": "npm --prefix frontend run dev",
+    "gateway": "npm --prefix API_Gateway run dev",
+    "auth": "npm --prefix Auth-Services run dev",
+    "flights": "npm --prefix Flight-Search-Service run dev",
+    "bookings": "npm --prefix Flight-Booking-Service run dev",
+    "reminders": "npm --prefix Reminder-Service run dev"
+  },
+  "keywords": [
+    "airline",
+    "flight-booking",
+    "microservices",
+    "react",
+    "vite",
+    "tailwind",
+    "express"
+  ],
+  "author": "AeroLuxe Team",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^10.0.5"
+  }
+}
